@@ -1,0 +1,58 @@
+.grid-container {
+    display: grid;
+/*    grid-template-columns: 50px 2fr 1fr 50px; */ /* 3つの等幅の列 */
+/*    grid-template-rows: 50px 1fr 1fr; */
+
+grid-template: 
+ "head head head" 50px
+ "sidel camerav sider" 200px
+ /50px 200px 50px;
+
+
+    grid-gap: 2px; /* グリッド間の間隔 */
+}
+
+.grid-item {
+    background-color: #ccc;
+    padding: 2px;
+    text-align: center;
+}
+
+.div-item{
+    padding: 20px;
+}
+
+.header{
+    grid-area: head;
+}
+
+.side-l{
+    grid-area: sidel;
+}
+
+.side-r{
+    grid-area: sider;
+}
+
+.camera{
+    grid-area: camerav;
+}
+
+.grid-container-2{
+    display: grid;
+    grid-template: 
+    "footl footr" 100px
+    /151px 151px;
+    grid-gap: 2px; /* グリッド間の間隔 */
+    padding-top: 2px;
+    
+    height: 100px;
+}
+
+.footer-l{
+    grid-area: footl;
+}
+
+.footer-r{
+    grid-area: footr;
+}
